@@ -6,18 +6,20 @@ package com.samuel.minesweeper.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 
 // Game have a 1 minifield and int count of moves that the player do
 // user can configure a game for that reason the game can set the value of rows, cols and mines
 public class Game extends BaseEntity {
 
     private final MineField minefield;
-
     private int moves = 0;
+    private boolean isPaused;
 
     public Game(int rows, int cols, int mineCount) {
         this.minefield = new MineField(rows, cols);
         setMinesRandomly(mineCount);
+        this.onCreate();
     }
 
     // user sets the quantity of mines but we need to place it randomly for that reason we use collection shuffle and we set the mines as true in that position
