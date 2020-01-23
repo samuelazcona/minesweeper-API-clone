@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2020. samuel azcona
+ */
+
 package com.samuel.minesweeper.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
