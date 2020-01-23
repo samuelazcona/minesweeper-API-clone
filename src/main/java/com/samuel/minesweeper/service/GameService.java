@@ -26,12 +26,11 @@ public class GameService {
         return gameRepository.save(game);
     }
 
-    public Game getGame(final Long id){
+    public Game getGame(final Long id) throws GameException{
         if(Objects.isNull(id)){
             throw new GameException("Id cant be nuill");
         }
-        return gameRepository.findById(id).orElseThrow(() -> {
-            throw new GameException("Game not found");
-        });
+
+        return gameRepository.findById(id).orElseThrow(() -> new GameException("Game not found"));
     }
 }

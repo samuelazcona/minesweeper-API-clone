@@ -6,6 +6,7 @@ package com.samuel.minesweeper.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 // MineField has a height width and also square class that represents all the "Squarees of mineField" that squares can be:
 // Mine, flag, or be open
@@ -36,7 +37,7 @@ public class MineField extends BaseEntity {
         return this.squares.get(row * this.width + col);
     }
 
-    public List<Square> getSquarees() {
+    public List<Square> getSquares() {
         return new ArrayList<>(this.squares);
     }
     public int getWidth() {
@@ -45,5 +46,9 @@ public class MineField extends BaseEntity {
 
     public int getHeight() {
         return height;
+    }
+
+    public List<Square> getNeighbors(Square square) {
+        return this.squares.stream().filter(square1 -> square1.isNeighbor(square)).collect(Collectors.toList());
     }
 }

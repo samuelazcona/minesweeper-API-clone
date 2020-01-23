@@ -53,4 +53,9 @@ public class Square {
     public void flagToggle() {
         this.isFlagged = !isFlagged;
     }
+
+    // we need to check if the square is neighbor
+    public boolean isNeighbor(Square square) {
+        return this != square && Math.abs(this.col - square.col) <= 1 && Math.abs(this.row - square.row) <= 1;
+    }
 }
