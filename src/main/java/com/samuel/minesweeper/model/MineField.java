@@ -9,7 +9,7 @@ import java.util.List;
 
 // MineField has a height width and also square class that represents all the "Squarees of mineField" that squares can be:
 // Mine, flag, or be open
-public class MineField {
+public class MineField extends BaseEntity {
 
     private final List<Square> squares;
     private final int height;

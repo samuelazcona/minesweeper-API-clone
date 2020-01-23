@@ -9,9 +9,10 @@ import java.util.Collections;
 
 // Game have a 1 minifield and int count of moves that the player do
 // user can configure a game for that reason the game can set the value of rows, cols and mines
-public class Game {
+public class Game extends BaseEntity {
 
     private final MineField minefield;
+
     private int moves = 0;
 
     public Game(int rows, int cols, int mineCount) {

@@ -4,11 +4,17 @@
 
 package com.samuel.minesweeper.model;
 
+
 public class Square {
+
     private boolean isMine;
+
     private boolean isOpen;
+
     private boolean isFlagged;
+
     private final int row;
+
     private final int col;
 
     public Square(int row, int col) {
