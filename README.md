@@ -1,7 +1,7 @@
 # NOTES FROM SAMUEL AZCONA
-- RESTful API for realtime game? really? principle of RESTful is to DONT be stateless this game require to save state i think maybe its best to instead of be RESTful this need to have a Socket or GRPC solution for the communication layer, also use database resource for all moves and actions from the user its not a good option, all this need moves and in game data need to be managed by the UI/APP/WEB and this only need to store the state of the game in the backend to save it or resume letter.
+- RESTful API for realtime game? really? principle of RESTful is to DONT be stateless this game require to save state i think maybe its best to instead of be RESTful this need to have a Socket or GRPC solution for the communication layer, also use database resource for all moves and actions from the user its not a good option, all this moves and in game data need to be managed by the UI/APP/WEB and send the state to the backend to store to save it or resume the game.
 
-- If wee need to use a databse, use a Relational Databese need a crazy relations of all squares so its best to use a non relational database like mongo to store only the document state of the game, so its more easy to resume from the pause state for example.
+- If wee need to use a database, use a Relational Database need a crazy relations of all squares... so its best to use a non relational database like mongo to store only the document state of the game, so its more easy to resume from the pause state for example.
 - i only complete basics example code in 5 hours, so this its not finish, but its usable you can up the app and try to create new game from swagger UI
 
 # HOW TO DEPLOY
