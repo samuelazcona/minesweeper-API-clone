@@ -1,3 +1,14 @@
+# NOTES FROM SAMUEL AZCONA
+- RESTful API for realtime game? really? principle of RESTful is to DONT be stateless this game require to save state, ok we can use databse for this.... but use database resource for all moves and actions from the user? maybe memory storage like redis fits better... but i think maybe its best to instead of be RESTful this need to have a Socket or GRPC solution for the communication layer 
+- If wee need to use a databse, use a Relational Databese need a crazy relations of all squares so its best to use a non relational database like mongo to store only the document state of the game, so its more easy to resume from the pause state for example.
+- for actions if we required a lot of actions a command pattern fits better
+- i only complete basics example code in 5 hours, so this its not finish, but its usable you can up the app and try to create new game from swagger UI
+
+# HOW TO DEPLOY
+- build with mvn clean package
+- java -jar target/minesweeper-0.0.1-SNAPSHOT.jar
+
+
 # minesweeper-API
 API test
 
