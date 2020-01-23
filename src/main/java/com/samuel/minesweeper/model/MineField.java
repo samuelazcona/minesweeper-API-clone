@@ -4,12 +4,15 @@
 
 package com.samuel.minesweeper.model;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 // MineField has a height width and also square class that represents all the "Squarees of mineField" that squares can be:
 // Mine, flag, or be open
+@Document
 public class MineField extends BaseEntity {
 
     private final List<Square> squares;

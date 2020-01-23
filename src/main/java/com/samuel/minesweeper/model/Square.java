@@ -5,7 +5,13 @@
 package com.samuel.minesweeper.model;
 
 
-public class Square {
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
+public class Square extends BaseEntity {
 
     private boolean isMine;
 
@@ -58,4 +64,5 @@ public class Square {
     public boolean isNeighbor(Square square) {
         return this != square && Math.abs(this.col - square.col) <= 1 && Math.abs(this.row - square.row) <= 1;
     }
+
 }

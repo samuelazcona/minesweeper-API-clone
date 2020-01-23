@@ -1,1 +1,15 @@
-/Users/gkupn/Projects/toc/minesweeper/src/main/java/com/samuel/minesweeper/MinesweeperApplication.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/config/SpringFoxConfig.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/config/CustomCorsFilter.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/repository/GameRepository.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/model/Game.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/config/MongoConfig.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/Exception/GameException.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/utils/UtilService.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/controller/GameController.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/model/BaseEntity.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/MinesweeperApplication.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/model/MineField.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/model/Square.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/utils/ApplicationContextUtils.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/model/GameOption.java
+/Users/gkupn/Projects/examns/minesweeper-API/src/main/java/com/samuel/minesweeper/service/GameService.java

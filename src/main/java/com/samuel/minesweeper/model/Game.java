@@ -5,6 +5,8 @@
 package com.samuel.minesweeper.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import io.swagger.annotations.ApiModel;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,6 +16,8 @@ import java.util.stream.Collectors;
 // Game have a 1 minifield and int count of moves that the player do
 // user can configure a game for that reason the game can set the value of rows, cols and mines
 @JsonIgnoreProperties(ignoreUnknown = true)
+@ApiModel(description = "All details about Game Class. ")
+@Document
 public class Game extends BaseEntity {
 
     private String userName;
@@ -21,10 +25,10 @@ public class Game extends BaseEntity {
     private int moves = 0;
     private boolean isPaused;
 
-    public Game(int rows, int cols, int mineCount) {
+    public Game(String userName, int rows, int cols, int mineCount) {
+        this.userName = userName;
         this.minefield = new MineField(rows, cols);
         setMinesRandomly(mineCount);
-        this.onCreate();
     }
 
     // user sets the quantity of mines but we need to place it randomly for that reason we use collection shuffle and we set the mines as true in that position

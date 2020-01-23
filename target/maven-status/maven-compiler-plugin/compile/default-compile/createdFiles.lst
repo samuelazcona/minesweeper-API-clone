@@ -1,1 +1,15 @@
+com/samuel/minesweeper/model/Game.class
+com/samuel/minesweeper/config/CustomCorsFilter.class
+com/samuel/minesweeper/utils/ApplicationContextUtils.class
+com/samuel/minesweeper/model/GameOption.class
+com/samuel/minesweeper/service/GameService.class
+com/samuel/minesweeper/repository/GameRepository.class
+com/samuel/minesweeper/config/MongoConfig.class
+com/samuel/minesweeper/model/MineField.class
+com/samuel/minesweeper/utils/UtilService.class
+com/samuel/minesweeper/config/SpringFoxConfig.class
+com/samuel/minesweeper/controller/GameController.class
 com/samuel/minesweeper/MinesweeperApplication.class
+com/samuel/minesweeper/model/Square.class
+com/samuel/minesweeper/model/BaseEntity.class
+com/samuel/minesweeper/Exception/GameException.class
